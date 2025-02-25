@@ -1,162 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Slider | Mix3</title>
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamikaze Legacy</title>
+  <link rel="stylesheet" href="Style.css">
+  <link rel="icon" href="TitleIcon.png" type="image/x-icon" />
 </head>
-
 <body>
-    <header>
-        <nav>
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Blog</a>
-            <a href="">Contact</a>
-        </nav>
+  <div class="website-content">
+    <header class="header">
+      <div class="TopContent">
+        <div class="LeftContent">
+          <span class="logo">Kamikaze Legacy</span>
+        </div>
+        <div class="CenterContent">
+          <a href="index.html" class="nav-button">HOME</a>
+          <a href="Albums.html" class="nav-button">MUSIC</a>
+          <a href="Bio.html" class="nav-button">ABOUT</a>
+          <a href="Contact.html" class="nav-button">CONTACT</a>
+        </div>
+        <div class="volume-control">
+          <button id="volume-button">🔊</button>
+          <input type="range" id="volume-slider" min="0" max="1" step="0.05" value="1">
+        </div>
+      </div>
     </header>
     
+    <section class="banner">
+      <div class="banner-content">
+        <img src="your-image.jpg" alt="Banner Image" />
+      </div>
+    </section>
+    
+    <section class="barBetween">
+      <div class="horizontal-bar"></div>
+    </section>
 
-
-    <div class="carousel">
-        <div class="list">
-            <div class="item">
-                <img src="SINGED.jpg" alt="">
-                <div class="content">
-                    <div class="author">Mix3</div>
-                    <div class="title">SINGED</div>
-                    <div class="topic">CHAMPIONS</div>
-                    <div class="desc">
-                        "How about a drink?"
-                    </div>
-                    <div class="buttons">
-                        <Button onclick="window.open('https://www.op.gg/champions/singed/build')">BUILD</Button>
-                        <button onclick="window.open('https://www.op.gg/summoners/eune/Mix3-Over')">OP.GG</button>
-                    </div>
-                </div>
+    <div class="extra-content">
+      <div class="section-title">
+        <x>Hear the Music of</x>
+        <y>Kamikaze Legacy</y>
+      </div>
+      <div class="example-section">
+        <!-- Player 1 -->
+        <b class="audio-title">AAAAAAAAAAALE</b>
+        <div class="audio-player">
+          <button class="play-button">
+            <img src="Content/play.png" alt="Play">
+          </button>          
+          <div class="progress-container">
+            <div class="progress-bar-container">
+              <div class="progress-bar"></div>
             </div>
-
-            <div class="item">
-                <img src="Vladimir.jpg" alt="">
-                <div class="content">
-                    <div class="author">Mix3</div>
-                    <div class="title">VLADIMIR</div>
-                    <div class="topic">CHAMPIONS</div>
-                    <div class="desc">
-                        "The rivers will run red..."
-                    </div>
-                    <div class="buttons">
-                        <Button onclick="window.open('https://www.op.gg/champions/vladimir/build')">BUILD</Button>
-                        <button onclick="window.open('https://www.op.gg/summoners/eune/Mix3-Over')">OP.GG</button>
-                    </div>
-                </div>
+          </div>
+          <audio class="audio">
+            <source src="Building a Foodtruck Monopoly.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+    
+        <!-- Player 2 -->
+        <b class="audio-title">TITLE</b>
+        <div class="audio-player">
+          <button class="play-button">
+            <img src="Content/play.png" alt="Play">
+          </button>          
+          <div class="progress-container">
+            <div class="progress-bar-container">
+              <div class="progress-bar"></div>
             </div>
-
-            <div class="item">
-                <img src="JAYCE.jpg" alt="">
-                <div class="content">
-                    <div class="author">Mix3</div>
-                    <div class="title">JAYCE</div>
-                    <div class="topic">CHAMPIONS</div>
-                    <div class="desc">
-                        "I fight for a brighter tomorrow."
-                    </div>
-                    <div class="buttons">
-                        <Button onclick="window.open('https://www.op.gg/champions/jayce/build')">BUILD</Button>
-                        <button onclick="window.open('https://www.op.gg/summoners/eune/Mix3-Over')">OP.GG</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="TF.jpg" alt="">
-                <div class="content">
-                    <div class="author">Mix3</div>
-                    <div class="title">Twisted Fate</div>
-                    <div class="topic">CHAMPIONS</div>
-                    <div class="desc">
-                        "Lady Luck is smilin'."
-                    </div>
-                    <div class="buttons">
-                        <Button onclick="window.open('https://www.op.gg/champions/twistedfate/build')">BUILD</Button>
-                        <button onclick="window.open('https://www.op.gg/summoners/eune/Mix3-Over')">OP.GG</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="YONE.jpg" alt="">
-                <div class="content">
-                    <div class="author">Mix3</div>
-                    <div class="title">YONE</div>
-                    <div class="topic">CHAMPIONS</div>
-                    <div class="desc">
-                        "One to cut, one to seal."
-                    </div>
-                    <div class="buttons">
-                        <Button onclick="window.open('https://www.op.gg/champions/yone/build')">BUILD</Button>
-                        <button onclick="window.open('https://www.op.gg/summoners/eune/Mix3-Over')">OP.GG</button>
-                    </div>
-                </div>
-            </div>
-
-
+          </div>
+          <audio class="audio">
+            <source src="Building a Foodtruck Monopoly.mp3" type="audio/mpeg">
+          </audio>
         </div>
 
-        <div class="thumbnail">
-            <div class="item">
-                <img src="SINGED.jpg" alt="">
-                <div class="content">
-                    <div class="title">Singed</div>
-                    <div class="description">Top</div>
-                </div>
+        <!-- Player 3 -->
+        <b class="audio-title">PYPYRPYRPY RPORRRR</b>
+        <div class="audio-player">
+          <button class="play-button">
+            <img src="Content/play.png" alt="Play">
+          </button>          
+          <div class="progress-container">
+            <div class="progress-bar-container">
+              <div class="progress-bar"></div>
             </div>
-
-            <div class="item">
-                <img src="Vladimir.jpg" alt="">
-                <div class="content">
-                    <div class="title">Vladimir</div>
-                    <div class="description">Mid/Top</div>
-                </div>
-            </div>
-            
-            <div class="item">
-                <img src="JAYCE.jpg" alt="">
-                <div class="content">
-                    <div class="title">Jayce</div>
-                    <div class="description">Top</div>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="TF.jpg" alt="">
-                <div class="content">
-                    <div class="title">Twisted Fate</div>
-                    <div class="description">Mid</div>
-                </div>
-            </div>
-
-            <div class="item">
-                <img src="YONE.jpg" alt="">
-                <div class="content">
-                    <div class="title">Yone</div>
-                    <div class="description">Mid</div>
-                </div>
-            </div>
+          </div>
+          <audio class="audio">
+            <source src="Building a Foodtruck Monopoly.mp3" type="audio/mpeg">
+          </audio>
         </div>
 
-        <div class="arrows">
-            <button id="prev"><</button>
-            <button id="next">></button>
-        </div>
-        <div class="time"></div>
-
+      </div>
     </div>
+    
+    <footer class="footer-bar">
+      <div class="footer-content">
+        <span>2025 Kamikaze Legacy</span>
+        <div class="social-icons">
+          <a href="https://www.youtube.com/@KamikazeLegacy"><img src="Content/yt.png" alt="YouTube"></a>
+          <a href="https://open.spotify.com/artist/2hpZz7vgTUe47atwqVboiT"><img src="Content/spotify.png" alt="Facebook"></a>
+          <a href="https://music.apple.com/us/artist/kamikaze-legacy/1624033763"><img src="Content/appleMusic.png" alt="Instagram"></a>
+          <a href="https://bsky.app/profile/kamikazelegacy.bsky.social"><img src="Content/blueSky.psd4.png" alt="Apple"></a>
+        </div>
+        <span>Graphics by [Nazwa Autora]</span>
+      </div>
+    </footer>
 
-    <script src="style.js"></script>
+    <script src="Scipts.js"></script>
+  </div>
 </body>
-
 </html>
